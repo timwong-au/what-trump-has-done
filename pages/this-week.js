@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import ActionCard from '../components/ActionCard';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { dummyActions } from '../src/data/dummyData';
+import { dummyActions } from '../data/dummyData';
 
 export default function ThisWeek() {
   const [actions] = useState(dummyActions);
@@ -13,8 +13,7 @@ export default function ThisWeek() {
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Head>
         <title>What Trump Has Done This Week | Factual Information</title>
-        <meta name="description" content="Factual, cited information about Donald Trump's actions this week" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <meta name="description" content="Factual, cited information about Donald Trump&apos;s actions this week" />
       </Head>
       
       <Navigation />
@@ -22,7 +21,7 @@ export default function ThisWeek() {
       <main className="container mx-auto px-4 py-8 flex-grow">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-2 text-gray-800">What Trump Has Done This Week</h1>
-          <p className="text-gray-600 mb-8">A summary of Donald Trump's actions from the past 7 days</p>
+          <p className="text-gray-600 mb-8">A summary of Donald Trump&apos;s actions from the past 7 days</p>
           
           {loading ? (
             <div className="flex justify-center items-center h-64">
