@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Navigation from '../../components/Navigation'; // Check path: should likely be ../../components/Navigation
 import Footer from '../../components/Footer';       // Check path: should likely be ../../components/Footer
 // Assuming service is in root src folder
-import { getActionById } from '../../src/services/actionService'; 
+// import { getActionById } from '../../src/services/actionService'; 
 
 // Ensure this function is exported as default
 export default function ActionDetail() {
